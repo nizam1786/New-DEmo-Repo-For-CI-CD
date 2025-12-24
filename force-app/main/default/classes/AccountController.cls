@@ -13,4 +13,9 @@ public with sharing class AccountController {
     public static void updateAccount(Account account) {
         update account;
     }
+
+    @AuraEnabled
+    public static void createAccount(Account account) {
+        insert account;
+    }
 }
